@@ -5,19 +5,19 @@
     "name": "todo-project",
     "namespace": "argocd",
     "annotations": {
-      "release-tag": "4.10-test-20261120-155256",
-      "source-commit": "5e0c23994f702612b38af7d8de3b86b6204d80f3"
+      "release-tag": "4.10",
+      "source-commit": "e2564dc9583c372f4c0f6dc975780c12d56bf9a2"
     }
   },
   "spec": {
     "source": {
-      "targetRevision": "2c9f4f4b91fcd081e197826e37a7e3c4d5c235bc",
+      "targetRevision": "808328371c7628e45dbeb76250c0f8356eea4984",
       "path": "overlays/production",
       "kustomize": {
         "images": [
-          "europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/todo-app=europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/todo-app:5e0c23994f702612b38af7d8de3b86b6204d80f3",
-          "europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/todo-backend=europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/todo-backend:5e0c23994f702612b38af7d8de3b86b6204d80f3",
-          "europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/broadcaster=europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/broadcaster:5e0c23994f702612b38af7d8de3b86b6204d80f3"
+          "europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/todo-app=europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/todo-app:e2564dc9583c372f4c0f6dc975780c12d56bf9a2",
+          "europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/todo-backend=europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/todo-backend:e2564dc9583c372f4c0f6dc975780c12d56bf9a2",
+          "europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/broadcaster=europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/broadcaster:e2564dc9583c372f4c0f6dc975780c12d56bf9a2"
         ]
       }
     }
