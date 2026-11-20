@@ -1,25 +1,25 @@
 {
-    "apiVersion":  "argoproj.io/v1alpha1",
-    "kind":  "Application",
-    "metadata":  {
-                     "name":  "todo-project",
-                     "namespace":  "argocd",
-                     "annotations":  {
-                                         "release-tag":  "4.9",
-                                         "source-commit":  "5520cd71159d9a18f268a7f2af2fa3dc29c58b1f"
-                                     }
-                 },
-    "spec":  {
-                 "source":  {
-                                "targetRevision":  "6c7340f16bfe2442aa1015c48ab1e8e1b20d974e",
-                                "path":  "overlays/production",
-                                "kustomize":  {
-                                                  "images":  [
-                                                                 "europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/todo-app=europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/todo-app:5520cd71159d9a18f268a7f2af2fa3dc29c58b1f",
-                                                                 "europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/todo-backend=europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/todo-backend:5520cd71159d9a18f268a7f2af2fa3dc29c58b1f",
-                                                                 "europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/broadcaster=europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/broadcaster:5520cd71159d9a18f268a7f2af2fa3dc29c58b1f"
-                                                             ]
-                                              }
-                            }
-             }
+  "apiVersion": "argoproj.io/v1alpha1",
+  "kind": "Application",
+  "metadata": {
+    "name": "todo-project",
+    "namespace": "argocd",
+    "annotations": {
+      "release-tag": "4.10-test-20261120-155256",
+      "source-commit": "5e0c23994f702612b38af7d8de3b86b6204d80f3"
+    }
+  },
+  "spec": {
+    "source": {
+      "targetRevision": "2c9f4f4b91fcd081e197826e37a7e3c4d5c235bc",
+      "path": "overlays/production",
+      "kustomize": {
+        "images": [
+          "europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/todo-app=europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/todo-app:5e0c23994f702612b38af7d8de3b86b6204d80f3",
+          "europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/todo-backend=europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/todo-backend:5e0c23994f702612b38af7d8de3b86b6204d80f3",
+          "europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/broadcaster=europe-north1-docker.pkg.dev/project-e08f1dba-8ab7-491a-90a/kurssi/broadcaster:5e0c23994f702612b38af7d8de3b86b6204d80f3"
+        ]
+      }
+    }
+  }
 }
